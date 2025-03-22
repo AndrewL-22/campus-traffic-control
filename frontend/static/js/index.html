@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Route Finder</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/684/684908.png" />
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md py-5 text-center">
+    <h1 class="text-3xl font-bold">🚀 Fastest Route Finder</h1>
+    <p class="text-gray-500 mt-1">Plan your route to Kean University</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto mt-8 px-6">
+    
+    <!-- Map Container -->
+    <div id="map" class="w-full h-96 rounded-lg shadow-md mb-8"></div>
+    <div id="route-info" class="mb-6 p-4 bg-blue-50 border border-blue-200 rounded shadow text-blue-800 hidden transition-all duration-500">
+    </div>
+    <!-- Route Form -->
+    <section id="route-form" class="bg-white p-6 rounded-lg shadow-md space-y-4">
+      <h2 class="text-xl font-semibold">Find Your Route</h2>
+      
+      <input
+        type="text"
+        id="start-location"
+        placeholder="Enter your starting address"
+        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <label class="block font-medium text-sm text-gray-700">Desired Arrival Time</label>
+    <input
+      type="time"
+      id="arrival-time"
+      class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+
+    <div id="leave-by" class="mt-4 text-md text-blue-700 font-semibold"></div>
+      
+    <button
+        id="calculate-route"
+        class="w-full bg-blue-600 text-white py-2 font-semibold rounded-md hover:bg-blue-700 transition duration-300"
+      >
+        Calculate Route
+      </button>
+
+    </section>
+
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
+  <script src="map.js"></script>
+</body>
+</html>
