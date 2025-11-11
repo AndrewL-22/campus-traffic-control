@@ -1,5 +1,8 @@
-# Campus Traffic Control System
+# Contributors
+[@weepingeye](https://github.com/weepingeye)
+[@AndrewL-22](https://github.com/AndrewL-22)
 
+# Campus Traffic Control System
 Were you ever late to campus because of stupid traffic. We have created a solution for that. We have implemented a real-time traffic monitoring and routing system for university campuses, leveraging TomTom APIs and Mapbox GL JS to find the fast route from where you are to your specified 
 
 
